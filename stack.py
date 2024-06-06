@@ -14,7 +14,7 @@ class Stack:
         
 
     def get(self):
-        return self.items.pop()
+        return  self.items[-1]
         
 
     def length(self):
