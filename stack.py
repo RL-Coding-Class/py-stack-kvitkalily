@@ -14,10 +14,11 @@ class Stack:
         
 
     def get(self):
-        pass
+        return self.items.pop()
+        
 
     def length(self):
-        pass
+        return len(self.items)
 
     def __str__(self):
         pass
