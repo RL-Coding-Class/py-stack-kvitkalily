@@ -1,10 +1,10 @@
 class Stack:
     """Provides stack container"""
     def __init__(self):
-        pass
+        self.items  = []
 
     def push(self, data):
-        pass
+        self.items.append(data)
 
     def pop(self):
         pass
