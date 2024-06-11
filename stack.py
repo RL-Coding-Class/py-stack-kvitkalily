@@ -1,22 +1,28 @@
 class Stack:
     """Provides stack container"""
-    def __init__(self):
-        pass
+    def __init__(self, typee = None):
+        self.items  = []
+        self.typee = typee
 
     def push(self, data):
-        pass
+        self.items.append(data)
 
     def pop(self):
-        pass
+        data = self.items[-1]
+        self.items.pop()
+        return data 
+        
 
     def get(self):
-        pass
+        return  self.items[-1]
+        
 
     def length(self):
-        pass
+        return len(self.items)
 
     def __str__(self):
+        #return f"Stack(stack={self.items})"
         pass
-
     def __repr__(self):
+        #return str(self.items)
         pass
